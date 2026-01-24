@@ -1,0 +1,26 @@
+Already logging to firstprog2.txt.
+Breakpoint 1 at 0x119c
+Starting program: /home/fariq/Desktop/buku/chapter1/firstprog/firstprog 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/usr/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Breakpoint 1, 0x5655619c in main ()
+eax            0x5655618d          1448436109
+ecx            0xffffd080          -12160
+edx            0xffffd0a0          -12128
+ebx            0xf7f9ae14          -134631916
+esp            0xffffd060          0xffffd060
+ebp            0xffffd068          0xffffd068
+esi            0x56558eec          1448447724
+edi            0xf7ffcc60          -134230944
+eip            0x5655619c          0x5655619c <main+15>
+eflags         0x282               [ SF IF ]
+cs             0x23                35
+ss             0x2b                43
+ds             0x2b                43
+es             0x2b                43
+fs             0x0                 0
+gs             0x63                99
+Warning: 'set logging off', an alias for the command 'set logging enabled', is deprecated.
+Use 'set logging enabled off'.
+

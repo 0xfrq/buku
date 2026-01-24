@@ -1,0 +1,29 @@
+0x565561b6	6			printf("Hello, world!\n");
+0x565561bc	6			printf("Hello, world!\n");
+0x56557008:	"Hello, world!"
+0x565561bd	6			printf("Hello, world!\n");
+0x56557008:	"Hello, world!"
+0x56556040 in puts@plt ()
+0x56557008:	"Hello, world!"
+0x56556046 in puts@plt ()
+0x56557008:	"Hello, world!"
+0x5655604b in puts@plt ()
+0x56557008:	"Hello, world!"
+0x56556020 in ?? ()
+0x56557008:	"Hello, world!"
+0x56556026 in ?? ()
+0x56557008:	"Hello, world!"
+0xf7fd8ba0 in ?? () from /lib/ld-linux.so.2
+0x56557008:	"Hello, world!"
+0xf7fd8ba1 in ?? () from /lib/ld-linux.so.2
+0x56557008:	"Hello, world!"
+0xf7fd8ba2 in ?? () from /lib/ld-linux.so.2
+0x56557008:	"Hello, world!"
+0xf7fd8ba3 in ?? () from /lib/ld-linux.so.2
+0x56557008:	"Hello, world!"
+0xf7fd8ba7 in ?? () from /lib/ld-linux.so.2
+0x56557008:	"Hello, world!"
+0xf7fd8bab in ?? () from /lib/ld-linux.so.2
+0xf7ffda70:	""
+0xf7fd6ac0 in ?? () from /lib/ld-linux.so.2
+0xf7ffda70:	""
