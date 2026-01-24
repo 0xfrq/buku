@@ -1,0 +1,91 @@
+1	#include <stdio.h>
+2	#include <string.h>
+3	
+4	int main() {
+5		char str_a[20];
+6	
+7		strcpy(str_a, "Hello, world!\n");
+8		printf(str_a);
+9	}
+Breakpoint 1 at 0x11aa: file char_array2.c, line 7.
+Function "strcpy" not defined.
+Breakpoint 2 (strcpy) pending.
+Breakpoint 3 at 0x11c8: file char_array2.c, line 8.
+Starting program: /home/fariq/Desktop/buku/chapter1/strings/char_array2 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/usr/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Breakpoint 1, main () at char_array2.c:7
+7		strcpy(str_a, "Hello, world!\n");
+eip            0x565561aa          0x565561aa <main+29>
+No symbol "eip" in current context.
+=> 0x565561aa <main+29>:	lea    eax,[ebp-0x1c]
+   0x565561ad <main+32>:	mov    DWORD PTR [eax],0x6c6c6548
+   0x565561b3 <main+38>:	mov    DWORD PTR [eax+0x4],0x77202c6f
+   0x565561ba <main+45>:	mov    DWORD PTR [eax+0x8],0x646c726f
+   0x565561c1 <main+52>:	mov    DWORD PTR [eax+0xb],0xa2164
+Dump of assembler code for function main:
+   0x5655618d <+0>:	lea    ecx,[esp+0x4]
+   0x56556191 <+4>:	and    esp,0xfffffff0
+   0x56556194 <+7>:	push   DWORD PTR [ecx-0x4]
+   0x56556197 <+10>:	push   ebp
+   0x56556198 <+11>:	mov    ebp,esp
+   0x5655619a <+13>:	push   ebx
+   0x5655619b <+14>:	push   ecx
+   0x5655619c <+15>:	sub    esp,0x20
+   0x5655619f <+18>:	call   0x56556189 <__x86.get_pc_thunk.dx>
+   0x565561a4 <+23>:	add    edx,0x2e50
+=> 0x565561aa <+29>:	lea    eax,[ebp-0x1c]
+   0x565561ad <+32>:	mov    DWORD PTR [eax],0x6c6c6548
+   0x565561b3 <+38>:	mov    DWORD PTR [eax+0x4],0x77202c6f
+   0x565561ba <+45>:	mov    DWORD PTR [eax+0x8],0x646c726f
+   0x565561c1 <+52>:	mov    DWORD PTR [eax+0xb],0xa2164
+   0x565561c8 <+59>:	sub    esp,0xc
+   0x565561cb <+62>:	lea    eax,[ebp-0x1c]
+   0x565561ce <+65>:	push   eax
+   0x565561cf <+66>:	mov    ebx,edx
+   0x565561d1 <+68>:	call   0x56556040 <printf@plt>
+   0x565561d6 <+73>:	add    esp,0x10
+   0x565561d9 <+76>:	mov    eax,0x0
+   0x565561de <+81>:	lea    esp,[ebp-0x8]
+   0x565561e1 <+84>:	pop    ecx
+   0x565561e2 <+85>:	pop    ebx
+   0x565561e3 <+86>:	pop    ebp
+   0x565561e4 <+87>:	lea    esp,[ecx-0x4]
+   0x565561e7 <+90>:	ret
+End of assembler dump.
+Continuing.
+
+Breakpoint 3, main () at char_array2.c:8
+8		printf(str_a);
+eip            0x565561c8          0x565561c8 <main+59>
+Note: breakpoint 2 also set at pc 0xf7e113e0.
+Breakpoint 4 at gnu-indirect-function resolver at 0xf7e113e0
+Starting program: /home/fariq/Desktop/buku/chapter1/strings/char_array2 
+Error in re-setting breakpoint 4: Function "strcpy" not defined.
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/usr/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Breakpoint 1, main () at char_array2.c:7
+7		strcpy(str_a, "Hello, world!\n");
+Continuing.
+
+Breakpoint 3, main () at char_array2.c:8
+8		printf(str_a);
+eip            0x565561c8          0x565561c8 <main+59>
+No symbol "eip" in current context.
+=> 0x565561c8 <main+59>:	sub    esp,0xc
+   0x565561cb <main+62>:	lea    eax,[ebp-0x1c]
+   0x565561ce <main+65>:	push   eax
+   0x565561cf <main+66>:	mov    ebx,edx
+   0x565561d1 <main+68>:	call   0x56556040 <printf@plt>
+   0x565561d6 <main+73>:	add    esp,0x10
+   0x565561d9 <main+76>:	mov    eax,0x0
+   0x565561de <main+81>:	lea    esp,[ebp-0x8]
+   0x565561e1 <main+84>:	pop    ecx
+   0x565561e2 <main+85>:	pop    ebx
+   0x565561e3 <main+86>:	pop    ebp
+   0x565561e4 <main+87>:	lea    esp,[ecx-0x4]
+   0x565561e7 <main+90>:	ret
+   0x565561e8 <_fini>:	push   ebx
+   0x565561e9 <_fini+1>:	sub    esp,0x8
