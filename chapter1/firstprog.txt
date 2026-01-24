@@ -1,0 +1,21 @@
+0000118d <main>:
+    118d:	8d 4c 24 04          	lea    ecx,[esp+0x4]
+    1191:	83 e4 f0             	and    esp,0xfffffff0
+    1194:	ff 71 fc             	push   DWORD PTR [ecx-0x4]
+    1197:	55                   	push   ebp
+    1198:	89 e5                	mov    ebp,esp
+    119a:	53                   	push   ebx
+    119b:	51                   	push   ecx
+    119c:	83 ec 10             	sub    esp,0x10
+    119f:	e8 ec fe ff ff       	call   1090 <__x86.get_pc_thunk.bx>
+    11a4:	81 c3 50 2e 00 00    	add    ebx,0x2e50
+    11aa:	c7 45 f4 00 00 00 00 	mov    DWORD PTR [ebp-0xc],0x0
+    11b1:	eb 16                	jmp    11c9 <main+0x3c>
+    11b3:	83 ec 0c             	sub    esp,0xc
+    11b6:	8d 83 14 e0 ff ff    	lea    eax,[ebx-0x1fec]
+    11bc:	50                   	push   eax
+    11bd:	e8 7e fe ff ff       	call   1040 <puts@plt>
+    11c2:	83 c4 10             	add    esp,0x10
+    11c5:	83 45 f4 01          	add    DWORD PTR [ebp-0xc],0x1
+    11c9:	83 7d f4 09          	cmp    DWORD PTR [ebp-0xc],0x9
+    11cd:	7e e4                	jle    11b3 <main+0x26>
