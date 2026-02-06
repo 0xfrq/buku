@@ -1,0 +1,30 @@
+1	#include <stdio.h>
+2	#include <string.h>
+3	
+4	int main() {
+5		char str_a[20];
+6		char *pointer;
+7		char *pointer2;
+8	
+9		strcpy(str_a, "Hello world!\n");
+10		pointer = str_a;
+11		printf(pointer);
+12	
+13		pointer2 = pointer + 2;
+14		printf(pointer2);
+15		strcpy(pointer2, "y you guys!\n");
+16		printf(pointer);
+17	}
+End of the file was already reached, use "list ." to list the current location again
+Breakpoint 1 at 0x11cd: file pointer.c, line 11.
+Starting program: /home/fariq/Desktop/buku/chapter1/strings/pointer 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/usr/lib/x86_64-linux-gnu/libthread_db.so.1".
+
+Breakpoint 1, main () at pointer.c:11
+11		printf(pointer);
+0xffffd054:	0x6c6c6548
+0xffffd054:	"Hello world!\n"
+0xffffd06c:	0xffffd054
+$1 = (char **) 0xffffd06c
+$2 = 0xffffd054 "Hello world!\n"

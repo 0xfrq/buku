@@ -1,0 +1,7 @@
+the int data type is 		 4 bytes
+the unsigned int data type is 	 4 bytes
+the short int data type is 	 2 bytes
+the long int data type is 	 4 bytes
+the long long int data type is 	 8 bytes
+the float data type is		 4 bytes
+the char data type is 		 1 bytes
